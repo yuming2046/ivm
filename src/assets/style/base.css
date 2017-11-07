@@ -1,0 +1,9 @@
+@import './ionicons.min.css'
+
+.ivu-icon-ios-arrow-down:before {
+	content: "\F3D0";
+}
+
+.collapse-transition {
+	transition: .2s height ease-in-out, .2s padding-top ease-in-out, .2s padding-bottom ease-in-out;
+}

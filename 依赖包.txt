@@ -1,0 +1,13 @@
+npm install babel-core babel-loader babel-plugin-transform-runtime babel-preset-env babel-preset-stage-2 babel-register --save-dev
+
+npm install connect-history-api-fallback copy-webpack-plugin extract-text-webpack-plugin --save-dev
+
+npm install css-loader file-loader url-loader portfinder cross-env --save-dev
+
+npm install express eventsource-polyfill autoprefixer  chalk semver shelljs opn ora rimraf --save-dev
+
+
+npm install friendly-errors-webpack-plugin html-webpack-plugin http-proxy-middleware webpack-bundle-analyzer optimize-css-assets-webpack-plugin --save-dev
+
+npm install vue-loader vue-style-loader vue-template-compiler --save-dev
+npm install webpack webpack-dev-middleware webpack-hot-middleware webpack-merge --save-dev
