@@ -18,7 +18,7 @@
 				return [
 					`${prefixCls} ${prefixCls}-${this.type}`,
 					this.styles
-					]
+				]
 			}
 		}
 	};

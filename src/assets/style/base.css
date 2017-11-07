@@ -1,7 +1,7 @@
 @import './ionicons.min.css'
 
 .ivu-icon-ios-arrow-down:before {
-	content: "\F3D0";
+	content: "\f3d0";
 }
 
 .collapse-transition {
