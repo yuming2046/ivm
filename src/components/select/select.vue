@@ -6,8 +6,8 @@
 			@click="toggleMenu">
 			<slot name="input">
 				<input type="hidden" :name="name" :value="model">
-				<div class="ivu-tag" v-for="(item, index) in selectedMultiple">
-					<span class="ivu-tag-text">{{ item.label }}</span>
+				<div class="ivm-tag" v-for="(item, index) in selectedMultiple">
+					<span class="ivm-tag-text">{{ item.label }}</span>
 					<Icon type="ios-close-empty" @click.native.stop="removeTag(index)"></Icon>
 				</div>
 				<span :class="[prefixCls + '-placeholder']" v-show="showPlaceholder && !filterable">{{ localePlaceholder }}</span>
@@ -45,22 +45,19 @@
 	</div>
 </template>
 <script>
+	import Utils from '@/utils';
 	import Icon from '../icon';
 	import Drop from './dropdown.vue';
-	import clickoutside from '@/directives/clickoutside';
-	import TransferDom from '@/directives/transfer-dom';
-	import Utils from '@/utils';
 	// import Emitter from '@/mixins/emitter';
 	// import Locale from '@/mixins/locale';
 	import {debounce} from './utils';
 
-	const prefixCls = 'ivu-select';
+	const prefixCls = 'ivm-select';
 
 	export default {
 		name: 'iSelect',
 		// mixins: [ Emitter, Locale ],
 		components: { Icon, Drop },
-		directives: { clickoutside, TransferDom },
 		props: {
 			value: {
 				type: [String, Number, Array],
@@ -178,7 +175,7 @@
 				return {
 					[prefixCls + '-dropdown-transfer']: this.transfer,
 					[prefixCls + '-multiple']: this.multiple && this.transfer,
-					['ivu-auto-complete']: this.autoComplete,
+					['ivm-auto-complete']: this.autoComplete,
 				};
 			},
 			selectionCls () {

@@ -1,7 +1,9 @@
-import Emitter from './mixins/emitter'
-import {Icon, Menu} from './components'
+import Emitter from '@/mixins/emitter'
+import clickoutside from '@/directives/clickoutside';
+import TransferDom from '@/directives/transfer-dom';
+import {Icon, Menu} from '@/components'
 
-import './assets/style/base.css'
+import '@/assets/style/base.css'
 
 const ivm = {
 	Icon,
@@ -21,6 +23,8 @@ const install = function(Vue, opts = {}) {
 	});
 
 	Vue.mixin(Emitter)
+	Vue.directive('clickoutside', clickoutside)
+	Vue.directive('TransferDom', TransferDom)
 
 	// Vue.prototype.$Loading = LoadingBar;
 	// Vue.prototype.$Message = Message;

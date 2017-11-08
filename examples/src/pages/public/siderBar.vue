@@ -46,9 +46,9 @@
 </script>
 
 <style>
-	.siderBar{flex:240px 0 0;border-right: 1px solid #e6e6e6;background-color: #f4f4f4}
+	.siderBar{flex:240px 0 0;border-right: 1px solid #d2d6de;background-color: #f9fafc}
 	.menuitem{font-size: 14px;padding-left:34px;}
-	.siderBar .user{margin:16px 0;padding:0 16px;display: flex;flex-direction: row;}
+	.siderBar .user{padding:16px;display: flex;flex-direction: row;/*border-bottom: 1px solid #d2d6de;*/}
 	.siderBar .user .userAvator{padding-right: 10px}
 	.siderBar .user .userAvator img{width:46px;height:46px;border-radius:50%;}
 	.siderBar .user .userName{margin-top:4px;}

@@ -1,7 +1,8 @@
 <template>
-	<i :class="classes"></i>
+	<i :class="classes" @click="handleClick"></i>
 </template>
 <script>
+	import '@/assets/style/icon.css'
 	const prefixCls = 'ivm-icon';
 
 	export default {
@@ -12,6 +13,11 @@
 			styles: {
 				type: String
 			}
+		},
+		methods: {
+			handleClick (event) {
+				this.$emit('click', event);
+			},
 		},
 		computed: {
 			classes () {

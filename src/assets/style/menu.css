@@ -5,7 +5,6 @@
 	transition: all .2s ease-in-out
 }
 
-
 .ivm-menu-dark .ivm-menu-item,
 .ivm-menu-dark .ivm-menu-submenu-title{
 	padding:12px 24px;
@@ -24,8 +23,9 @@
 .ivm-menu-dark .ivm-menu-submenu-title-icon{
 	float: right;
 	position: relative;
-	top: 4px;
+	top: 2px;
 }
+
 .ivm-menu-submenu-title-icon {
 	transition: transform .2s ease-in-out;
 }
