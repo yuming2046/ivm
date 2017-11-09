@@ -3,3 +3,21 @@
 html, body{width:100%;height:100%;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;color:#333;font-smoothing: antialiased;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 
 #app{width: 100%;height:100%;}
+
+.siderbar{flex:240px 0 0;border-right: 1px solid #d2d6de;background-color: #f9fafc}
+.menuitem{font-size: 14px;padding-left:34px;}
+.siderbar .user{padding:16px;display: flex;flex-direction: row;/*border-bottom: 1px solid #d2d6de;*/}
+.siderbar .user .useravator{padding-right: 10px}
+.siderbar .user .useravator img{width:46px;height:46px;border-radius:50%;}
+.siderbar .user .username{margin-top:4px;}
+.siderbar .user .username p{font-size: 14px}
+.siderbar .user .username p.userstatus{font-size: 12px;margin-top:6px;}
+
+
+.sidebar-collapse .i-header .logo{flex: 0 0 56px;transition:all .2s ease-in-out;}
+.sidebar-collapse .i-header .logo h1{font-size: 30px;transition:all .2s ease-in-out;}
+.sidebar-collapse .siderbar{flex: 0 0 56px;transition:all .2s ease-in-out;}
+
+.sidebar-collapse .user{padding:0;}
+.sidebar-collapse .siderbar .username,
+.sidebar-collapse .siderbar .layout-text{display: none}

@@ -1,6 +1,6 @@
 <template>
-	<div class="main" :class="isToggle ? 'sidebar-collapse' : ''">
-		<iHeader/>
+	<div class="main" :class="collapse ? 'sidebar-collapse' : ''">
+		<iHeader v-on:sidebar-collapse="collapseSideBar"></iHeader>
 		<section class="section">
 			<SiderBar/>
 		</section>
@@ -13,25 +13,15 @@
 	export default {
 		name: 'Index',
 		data: () => ({
-			isToggle: false
+			collapse: false
 		}),
-		watch: {
-			isToggle: {
-				deep: true,
-				handler(v){
-					console.log(v)
-				}
+		components: {iHeader, SiderBar},
+		methods: {
+			collapseSideBar(status){
+				this.collapse = status
 			}
 		},
-		components: {iHeader, SiderBar},
-		mounted(){
-			console.log("###")
-			this.$on('sidebar-toggle', (status) => {
-				console.log("@@@")
-				console.log(status)
-				this.isToggle = status;
-			});
-		}
+		mounted(){}
 	}
 </script>
 

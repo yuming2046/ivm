@@ -10,7 +10,15 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			name: '首页',
+			name: 'Index',
+			meta:{
+				auth:false
+			},
+			component: Index
+		},
+		{
+			path: 'login',
+			name: 'Login',
 			component: Index
 		},
 		{
